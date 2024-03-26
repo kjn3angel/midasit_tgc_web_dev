@@ -8,3 +8,133 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+body {
+  font-size: 14px;
+}
+#header {
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,1);
+	opacity: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.gmail {
+	width: 141px;
+	color: rgba(0,0,0,1);
+	position: absolute;
+	top: 45px;
+	left: 1000px;
+	font-family: Roboto;
+	font-weight: Light;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+}
+.image {
+	width: 86px;
+	color: rgba(0,0,0,1);
+	position: absolute;
+	top: 45px;
+	left: 1080px;
+	font-family: Roboto;
+	font-weight: Light;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+}
+.google_logo {
+	width: 272px;
+	height: 92px;
+	background: url("google.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 300px;
+	left: 584px;
+	overflow: hidden;
+}
+.google_input {
+	width: 807px;
+	height: 50px;
+	background: rgba(255,255,255,1);
+	opacity: 1;
+	position: absolute;
+	top: 446px;
+	left: 312px;
+	border: 1px solid rgba(228,223,223,1);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+	padding-left: 30px;
+}
+.wrap_s1 {
+	width: 188px;
+	height: 56px;
+	background: rgba(230,230,230,1);
+	opacity: 1;
+	position: absolute;
+	top: 567px;
+	left: 488px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	overflow: hidden;
+}
+.text_s1 {
+  width: 188px;
+  color: rgba(32,33,43,1);
+  position: absolute;
+  top: 580px;
+  left: 488px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.wrap_s2 {
+	width: 219px;
+	height: 56px;
+	background: rgba(230,230,230,1);
+	opacity: 1;
+	position: absolute;
+	top: 567px;
+	left: 734px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	overflow: hidden;
+}
+.text_s2 {
+  width: 219px;
+  color: rgba(32,33,43,1);
+  position: absolute;
+  top: 580px;
+  left: 734px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.text_s1:hover {
+  width: 188px;
+  color: rgba(255,33,43,1);
+  position: absolute;
+  top: 580px;
+  left: 488px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
