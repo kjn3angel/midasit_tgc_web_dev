@@ -1,9 +1,24 @@
-<html>
+<!DOCTYPE html>
 <head>
 	<link rel="stylesheet" type="text/css" href="google.css">
 	<script type="text/javascript" src="google.js"></script>
 	<title>Google</title>
 </head>
 <body>
+	<div id="header">
+		<div class="nav_bar">
+			<a href="https://mail.google.com">Gmail</a>
+			&nbsp;&nbsp;&nbsp;		
+			<a href="https://www.google.com/imghp">이미지</a>
+		</div>
+	</div>
+	<div id="body">
+		<img id="logo" src="google.png" alt="이미지 없음" />
+		<input class="text_box" type="text" name="search" placeholder="Google 검색 또는 URL 입력" id="search">
+		<div class="link_icon">
+			<input class="link_btn" type="submit" value="Goolge 검색" onClick={spanBtn();}>
+			<input class="link_btn" type="submit" value="I'm Feeling Lucky" onClick={luckyBtn();}>
+		</div>
+	</div>
 </body>
 </html>
