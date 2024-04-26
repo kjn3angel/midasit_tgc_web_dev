@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './Todos.css';
 import useTodos from '../hooks/useTodos'
+import Todo from './Todo'
 
 // 새로운 컴포넌트를 정의합니다.
 function Todos() {
@@ -9,16 +10,27 @@ function Todos() {
   // api 호출을 통해 받아온 데이터를 todos라는 이름으로 사용합니다. (내부에서 useState, useEffect 사용됨)
   const todos = useTodos(counter);
 
+  const onClickAdd = () => {
+    setCounter(counter + 1);
+  }
+
+  const onClickDelAll = () => {
+    // ** Check된 항목만 삭제하고 나머지는 유지하고 싶었으나, 아직은 잘 모르겠음. ㅠㅠ **
+    setCounter(1);
+  }
+
   return (
     <div className="Todos">
-      <p onClick={()=>setCounter(counter + 1)}>
-        {counter}
-      </p>
+      <h1 font='Nanum Gothic'>일정관리</h1>
+      <div class="todo_input">        
+      <input class="todo_btn" type="submit" value="일정추가" onClick={onClickAdd} />
+      <input class="todo_btn" type="submit" value="완료된 일정 모두삭제" onClick={onClickDelAll} />
+      </div>
       <ul>
         {
-            // todos 배열을 순회하며 각각의 요소를 <li> 태그를 사용하여 출력합니다.
-            // 이렇게 반복되는 요소에 key라는 프로퍼티가 빠지면 콘솔에 경고가 뜹니다.
-          todos.map((todo)=><li key={todo.id}>{todo.todo}</li>)
+          // todos 배열을 순회하며 각각의 요소를 <li> 태그를 사용하여 출력합니다.
+          // 이렇게 반복되는 요소에 key라는 프로퍼티가 빠지면 콘솔에 경고가 뜹니다.
+          todos.map((todo)=><Todo todo={todo} />)
         }
       </ul>
     </div>
